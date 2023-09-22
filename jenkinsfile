@@ -21,7 +21,7 @@ pipeline {
             }
         }
 
-        stage('Stage 4- Code Security') {
+        stage('Stage 4- Code Deploy') {
             steps {
                 echo 'Hello World'
             }
