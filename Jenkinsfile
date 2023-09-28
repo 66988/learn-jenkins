@@ -18,7 +18,7 @@ node('workstation'){
   stage('Function calling'){
        function1()
     }
-  if(x>0)
+  if(x>20)
   {
   stage('if condition')
   {
