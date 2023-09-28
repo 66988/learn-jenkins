@@ -45,11 +45,32 @@ pipeline {
             }
         }
 
-        stage('Stage 2- Test') {
-            steps {
-                echo 'Hello World Stage-2'
-            }
+        stage('Stage 2- Test Parallel') {
+        Parallel{
+           stage{
+             steps {
+                echo 'Parallel Stage 2.0'
+                   }
+           }
+           stage{
+                        steps {
+                           echo 'Parallel Stage 2.0'
+                              }
+                      }
+           stage{
+                        steps {
+                           echo 'Parallel Stage 2.1'
+                              }
+                      }
+           stage{
+                        steps {
+                           echo 'Parallel Stage 2.2'
+                              }
+                      }
         }
+        }
+
+
 
         stage('Stage 3- Code Quality') {
             steps {
