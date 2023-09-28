@@ -1,8 +1,8 @@
 node('workstation'){
   def x = 10
   env.y = 20
-  stage('Test'){
+  stage('Variable'){
     print x
-    sh 'echo y'
+    sh 'echo y - ${y}'
   }
 }
