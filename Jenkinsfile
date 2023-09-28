@@ -24,6 +24,10 @@ pipeline {
 
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
+    tools {
+         maven 'maven'
+       }
+
     stages {
 
         stage('Stage 1- Code') {
