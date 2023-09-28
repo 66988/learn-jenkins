@@ -25,9 +25,13 @@ node('workstation'){
   {
     function1()
   }
+  }
   else
   {
-    function2()
+    Stage('else condition')
+      {
+        function2()
+      }
   }
 
 }
