@@ -39,7 +39,7 @@ pipeline {
                 echo SSH
                 sh 'env'
                 sh 'ansible -i 172.31.23.36, all -e ansible_user=${SSH_USR} -e ansible_password=${SSH_PSW} -m ping'
-                sh 'mvn version'
+                //sh 'mvn version'
 
 
             }
