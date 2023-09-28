@@ -7,6 +7,7 @@ pipeline {
      }
      environment{
      Test_URL = "google.com"
+     SSH=credentials("centos-ssh")
      }
 
     stages {
@@ -15,6 +16,9 @@ pipeline {
             steps {
                 echo 'Hello World Stage-1'
                 echo Test_URL
+                echo SSH
+                sh 'env'
+
             }
         }
 
