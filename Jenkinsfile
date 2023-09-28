@@ -10,6 +10,10 @@ pipeline {
      SSH=credentials("centos-ssh")
      }
 
+     options{
+     ansiColour('xterm')
+     }
+
     stages {
 
         stage('Stage 1- Code') {
