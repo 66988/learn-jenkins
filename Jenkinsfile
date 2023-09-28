@@ -46,7 +46,7 @@ pipeline {
         }
 
         stage('Stage 2- Test Parallel') {
-        Parallel{
+          parallel{
            stage{
              steps {
                 echo 'Parallel Stage 2.0'
