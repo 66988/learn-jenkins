@@ -3,6 +3,6 @@ node('workstation'){
   env.y = 20
   stage('Variable'){
     print x
-    sh 'echo y - ${y}'
+    sh '${y}'
   }
 }
