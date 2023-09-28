@@ -1,5 +1,13 @@
 pipeline {
-    agent any
+    //agent any
+    agent {
+       node {
+          label 'workstation'
+       }
+     }
+     environment{
+     Test_URL = "google.com"
+     }
 
     stages {
 
