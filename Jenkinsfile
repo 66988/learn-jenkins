@@ -31,6 +31,10 @@ pipeline {
     stages {
 
         stage('Stage 1- Code') {
+        input {
+                message "Should we continue?"
+                ok "Yes, we should."
+        }
             steps {
                 echo 'Hello World Stage-1'
                 echo Test_URL
