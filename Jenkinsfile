@@ -47,24 +47,24 @@ pipeline {
 
         stage('Stage 2- Test Parallel') {
           parallel{
-           stage{
+           stage('Parallel Stage 2.0'){
              steps {
                 echo 'Parallel Stage 2.0'
                    }
            }
-           stage{
-                        steps {
-                           echo 'Parallel Stage 2.0'
-                              }
-                      }
-           stage{
+           stage('Parallel Stage 2.1'){
                         steps {
                            echo 'Parallel Stage 2.1'
                               }
                       }
-           stage{
+           stage('Parallel Stage 2.2'){
                         steps {
                            echo 'Parallel Stage 2.2'
+                              }
+                      }
+           stage('Parallel Stage 2.3'){
+                        steps {
+                           echo 'Parallel Stage 2.3'
                               }
                       }
         }
