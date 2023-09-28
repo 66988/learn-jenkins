@@ -2,7 +2,6 @@ def function1()
 {
   print "This is a function class"
 }
-
 def function2()
 {
   print " If Condition not successful"
@@ -21,14 +20,14 @@ node('workstation'){
     }
   if(x>0)
   {
-  Stage('if condition')
+  stage('if condition')
   {
     function1()
   }
   }
   else
   {
-    Stage('else condition')
+    stage('else condition')
       {
         function2()
       }
